@@ -35,5 +35,8 @@ try:
 		print(usage)
 		exit(1)
 except Exception as e:
+	if len(sys.argv) != 4:
+		print(usage)
+		exit(1)
 	print(usage,'\n',e)
-	exit(1)
+	exit(2)
